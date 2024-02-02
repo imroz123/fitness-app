@@ -17,12 +17,12 @@ const CalendarCard = () => {
           <div className="calendar-card-card1">
             <h6 style={{ fontWeight: "bolder", fontSize: "initial" }}>2</h6>
             <hr class="solid"></hr>
-            <h6 style={{ fontWeight: "100", fontSize: "xx-small" }}>work</h6>
+            <h6 style={{ fontWeight: "100", fontSize: "xx-small", marginTop: '-6px'}}>work</h6>
           </div>
           <div className="calendar-card-card2">
             <h6 style={{ fontWeight: "bolder", fontSize: "initial" }}>3</h6>
             <hr class="solid"></hr>
-            <h6 style={{ fontWeight: "100", fontSize: "xx-small" }}>
+            <h6 style={{ fontWeight: "100", fontSize: "xx-small", marginTop: '-6px'}}>
               Personal
             </h6>
           </div>
