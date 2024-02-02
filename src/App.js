@@ -8,15 +8,17 @@ import {
   View,
   Card,
 } from "@aws-amplify/ui-react";
+import LightMainCard from "./pages/homepage";
 
 function App({ signOut }) {
   return(
     <View className="App">
-      <Card>
-        <Image src={logo} className="App-logo" alt="logo"/>
-        <Heading level={1}>We Are logged in </Heading>
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
+      <div className='container' style={{display: "flex"}}>
+        <LightMainCard />
+        {/* <Phoneview {...darkMode}/> */}
+        {/* <WatchView {...darkMode}/> */}
+      <Button variation={"primary"}style={{display: "flex", }}onClick={signOut}>Sign Out</Button>
+      </div>
     </View>
   )
 }
