@@ -9,15 +9,17 @@ import {
   Card,
 } from "@aws-amplify/ui-react";
 import LightMainCard from "./pages/homepage";
-
+import UserInfoForm from "./pages/userInfoForm";
+// import openAI from "./pages/OpenAi";
 function App({ signOut }) {
   return(
-    <View className="App">
-      <div className='container' style={{display: "flex"}}>
+    <View className="App" style={{overflow: "scroll"}}>
+      <div className='container' style={{ height: "100%", overflow: "scroll"}}>
         <LightMainCard />
+        <UserInfoForm />
         {/* <Phoneview {...darkMode}/> */}
         {/* <WatchView {...darkMode}/> */}
-      <Button variation={"primary"}style={{display: "flex", }}onClick={signOut}>Sign Out</Button>
+      <Button variation={"primary"} onClick={signOut}>Sign Out</Button>
       </div>
     </View>
   )
